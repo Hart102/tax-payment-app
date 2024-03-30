@@ -126,7 +126,7 @@ const Home = () => {
       </Element>
       {/* INDIVIDUALS */}
       {Individuals.map((item, index) => (
-        <Element name={item.section}>
+        <Element key={index} name={item.section}>
           <div
             key={item.title}
             className={
