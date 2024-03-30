@@ -1,14 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "@/pages/Home/index";
+import { createBrowserRouter } from "react-router-dom";
+import Layouut from "@/layout";
+import Home from "@/pages/Home";
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route index path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-export default App;
+export const router = createBrowserRouter([
+  {
+    element: <Layouut />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
+  },
+]);

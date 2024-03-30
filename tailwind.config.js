@@ -6,6 +6,7 @@ export default {
       colors: {
         BgLight: "#F4F8F4",
         BgDark: "#E4F8FB",
+        LightGray: "#757575",
         // Layer: "rgba(0, 0, 0, 0.9))",
       },
     },
