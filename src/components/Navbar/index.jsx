@@ -26,7 +26,7 @@ const Navbar = () => {
           : "px-5 py-4 w-screen fixed top-0 z-50 bg-white shadow"
       }
     >
-      <div className="w-full mx-auto text-black flex justify-between items-center capitalize relative">
+      <div className="w-full mx-auto text-black flex justify-between items-center capitalize relative text-sm">
         <div className="w-[40] h-[40px]">
           <img src={Logo} className="w-full h-full" />
         </div>
@@ -37,10 +37,20 @@ const Navbar = () => {
           md:flex md:gap-10 md:w-auto md:top-0 md:py-0 md:border-0 md:relative md:bg-transparent"
         >
           <div className="flex flex-col md:flex-row gap-7">
-            <Link to="howToRegister" smooth={true} duration={500}>
+            <Link
+              to="howToRegister"
+              smooth={true}
+              duration={500}
+              className="hover:text-green-600"
+            >
               how to register
             </Link>
-            <Link to="features" smooth={true} duration={500}>
+            <Link
+              to="features"
+              smooth={true}
+              duration={500}
+              className="hover:text-green-600"
+            >
               features
             </Link>
             <Dropdown className="bg-white shadow-md py-3 rounded">
@@ -55,34 +65,59 @@ const Navbar = () => {
               >
                 <DropdownItem
                   key="Individuals"
-                  className="py-2 px-5 hover:bg-BgLight hover:text-green-600"
+                  className="py-2 px-5 hover:bg-BgDark hover:text-green-600"
                 >
-                  <Link to="individuals" smooth={true} duration={500}>
+                  <Link
+                    to="individuals"
+                    smooth={true}
+                    duration={500}
+                    className="hover:text-green-600"
+                  >
                     Individuals
                   </Link>
                 </DropdownItem>
                 <DropdownItem
                   key="Corporations"
-                  className="py-2 px-5 hover:bg-BgLight hover:text-green-600"
+                  className="py-2 px-5 hover:bg-BgDark hover:text-green-600"
                 >
-                  <Link to="corporations" smooth={true} duration={500}>
+                  <Link
+                    to="corporations"
+                    smooth={true}
+                    duration={500}
+                    className="hover:text-green-600"
+                  >
                     Corporations
                   </Link>
                 </DropdownItem>
                 <DropdownItem
                   key="Consultants"
-                  className="py-2 px-5 hover:bg-BgLight hover:text-green-600"
+                  className="py-2 px-5 hover:bg-BgDark hover:text-green-600"
                 >
-                  <Link to="consultants" smooth={true} duration={500}>
+                  <Link
+                    to="consultants"
+                    smooth={true}
+                    duration={500}
+                    className="hover:text-green-600"
+                  >
                     Consultants
                   </Link>
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>
-            <Link to="calculator" smooth={true} duration={500}>
+            <Link
+              to="calculator"
+              smooth={true}
+              duration={500}
+              className="hover:text-green-600"
+            >
               tax calculator
             </Link>
-            <Link to="verify" smooth={true} duration={500}>
+            <Link
+              to="verify"
+              smooth={true}
+              duration={500}
+              className="hover:text-green-600"
+            >
               verify TCC
             </Link>
           </div>

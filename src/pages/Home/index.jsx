@@ -9,7 +9,7 @@ import AppImg from "@/assets/app-mockup.png";
 
 const Home = () => {
   return (
-    <div className="leading-7">
+    <div className="leading-7 text-sm">
       <div className="bg-BgLight p-5 pt-20">
         <div className="flex flex-col-reverse items-center text-center md:text-start md:flex-row md:gap-8">
           <div className="w-full flex flex-col gap-7 mt-10 md:w-1/2">
